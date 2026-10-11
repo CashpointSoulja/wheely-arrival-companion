@@ -57,7 +57,7 @@ An earlier 61-assertion run identified two copy issues, which were corrected bef
 
 ## Publication and video
 
-No public repository or Cloudflare URL is verified at this point. The short voiced vertical live walkthrough is planned, not yet rendered. A publication or video runtime claim requires a separately executed check.
+The owner-created GitHub repository is reachable through existing git access. No Cloudflare deployment URL is verified. The voiced vertical live walkthrough is rendered and inspected: **89.000 seconds, 1080×1920 portrait, 30 fps, H.264/AAC**. See the final media verification below and the recorded sections in [walkthrough](walkthrough.md). Repository publication and Cloudflare deployment are separate checks; no deployed-site claim is made.
 
 ## Reproducing the browser checks (optional development tooling)
 
