@@ -69,3 +69,9 @@ The harness in `tests/browser_check.py` preserves the executed assertions with p
 4. Optional `APP_URL` changes the local test URL; `EVIDENCE_DIR` changes output directory. Defaults: `http://localhost:4173`, `browser-evidence/`.
 
 It confirms reset dialogs and changes only synthetic state. Never point it at a real booking interface. Markdown-link assertions verify nonempty content, not HTML document rendering. No private browser profile or real booking data is shipped.
+
+## Final media verification
+
+Final media inspected: 89.000 seconds, 1080×1920, 30 fps, H.264/AAC; complete voiced ending, actual live controls, all named fixtures, no slides or arbitrary zoom. Narration clearly credits Ayo Ahmed, unchecked consent, no real message, no fare or availability guarantee. Public metadata credits Ayo only; attribution/path audit passed. Decoded visuals are unchanged after an audio-only clarity refinement.
+
+A final full check rerun at 07:10 UTC also passed: typecheck, lint, 67 unit cases (185ms), production build (106ms), and dependency audit (zero vulnerabilities). Browser checks remain from the 89-assertion production run; later changes were documentation and the static MP4 only. The application JS/CSS hashes are unchanged.

@@ -14,7 +14,7 @@ Do not invent a published URL. After deployment, request the real assigned URL a
 
 ## Cloudflare Pages (Direct Upload, no tokens)
 
-In the existing dashboard: Workers & Pages → Create application → Pages → Direct Upload. Use project name `wheely-arrival-companion`. Upload the prebuilt ZIP with `index.html` at its root. Stay on the free plan. The build ZIP includes `assets`, `brand`, `docs`, and `_headers`.
+In the existing dashboard: Workers & Pages → Create application → Pages → Direct Upload. Use project name `wheely-arrival-companion`. Upload the prebuilt ZIP with `index.html` at its root. Stay on the free plan. The build ZIP includes `assets`, `brand`, `docs`, `media`, and `_headers`.
 
 Direct Upload projects and Git integration have different update workflows; choose deliberately rather than implying an upload will automatically redeploy from Git. For Workers static assets, `wrangler.jsonc` is supplied as an alternate configuration, but no CLI deployment is necessary for Direct Upload.
 
@@ -25,3 +25,5 @@ If connected access cannot create a new user-owned repository, create an empty p
 ## Cost and privacy checks
 
 Use Pages static hosting only. No domain purchase, add-on, backend, worker function, analytics, account creation, flight API, notifications or storage. Static asset requests still expose ordinary network metadata to the host; no “zero data processing” claim is made.
+
+The source ZIP includes a portable `history.bundle` containing only Ayo-authored commits on `build/arrival-companion`. To preserve that history, extract the ZIP, then clone the bundle into a new folder with `git clone history.bundle arrival-source`. Set the remote to the new empty repository before pushing the build branch; do not overwrite an existing main branch. The regular source files can also be uploaded directly without Git history.

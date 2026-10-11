@@ -1,31 +1,47 @@
-# Live walkthrough plan
+# Recorded live walkthrough
 
-Independent concept by Ayo Ahmed. Synthetic data only. Target: 75–90 seconds, portrait, voiced, actual running web interface. No slides, invented customer evidence, simulated API calls, fare quote or affiliation claim. No random zoom; fixed viewport, deliberate scrolling and controls only.
+Independent concept by Ayo Ahmed. Not affiliated with Wheely. Synthetic data only.
 
-## Narrative and shots
+[Watch the voiced walkthrough](../media/arrival-walkthrough.mp4) from built product notes. Repository file: [public/media/arrival-walkthrough.mp4](../public/media/arrival-walkthrough.mp4).
 
-| Approximate time | Visible interaction | Narration intent |
-| --- | --- | --- |
-| 0–8s | Wordmark, non-affiliation, on-time flight, landing-based window | Introduce independent concept and existing capabilities; every person/time is synthetic. |
-| 8–18s | Landed → passport control → baggage reclaim; edit back and advance | Explain rider-reported stages and that this changes no booking. |
-| 18–28s | Private check-in: preset reason, optional estimate; save; edit and cancel | Note remains private; cancel preserves saved values. No delay explanation is mandatory. |
-| 28–43s | Preview exact Morgan update; unchecked consent and disabled action; refuse; re-enter; allow once and simulate; receipt; withdraw | Sharing separate from help. No real message at send. Withdrawal cannot recall prior simulated history. |
-| 43–62s | Early → late → unknown → stale → over-one-hour fixtures | Hour begins at updated landing; unknown has no countdown; stale is unconfirmed; no fare/availability invented past the hour. |
-| 62–73s | No-network fixture, check-in retained, offline preview disabled; recover; new unchecked review | No queues, auto-send or resumed consent. Progress only held in memory. |
-| 73–85s | Passport → bags → meet; simulated completion; optional feedback; product-note index | Completion is only the concept timeline; local feedback is not submitted or impact evidence. Product decisions are documented as hypotheses. |
+Verified: **89.000 seconds · 1080×1920 portrait · 30 fps · H.264/AAC**. One continuous capture of the actual local production interface, fixed camera scale and deliberate scrolling/controls, not slides. Voice/video inspected after pronunciation and safety-phrase refinement. No real message, booking, API signal or fare exists.
 
-Include the refusal, disabled duplicate action, edit/cancel, arrival completion and helpful/unclear/skipped variants in full UI verification. The short walkthrough demonstrates representative local feedback, not an asserted study result. Final MP4 runtime and complete state coverage must be verified, not assumed from this plan.
+## Recorded sections
 
-## Narration draft
+| Seconds | Visible interaction |
+| --- | --- |
+| 0–7 | On-time arrival, wordmark, independent/synthetic labels. |
+| 7–14 | Timeline; advance, edit back and return to baggage. |
+| 14–24 | Private reason/estimate, save, edit and cancel preserving saved values. |
+| 24–43 | Exact Morgan preview, unchecked consent, refusal, one-time simulation, local receipt, duplicate block and withdrawal without recall. |
+| 43–52 | Early and late fixtures; included hour begins at updated landing. |
+| 52–64 | Unknown without countdown, stale unconfirmed, 72-minute over-hour without fare/availability guarantee. |
+| 64–76 | No-network fixture, private note, disabled/refused update, recovery and new permission review. |
+| 76–84 | Ready preview without old delay, simulated completion and local Helpful feedback. |
+| 84–89 | Product notes, facts/hypotheses and reload reset. |
 
-This is an independent arrival concept by Ayo Ahmed, not affiliated with Wheely. Flight tracking, maps and chat already exist. Every person, signal and time here is synthetic.
+Helpful, Still unclear and Skip were separately verified in the 89-assertion browser run; the video shows representative Helpful feedback, not every combinatorial path. Browser-offline and fixture-offline recovery were separately tested; the video demonstrates the fixture control. Local UI evidence, not deployed-site, customer or native-app evidence.
 
-The rider marks progress after landing. I can move forward, or edit back, without changing a booking. A delay check-in is optional. Its reason and rough estimate stay private. Editing and cancelling keep the saved note.
+## Spoken narration
 
-Updating Morgan is a separate choice. I see the exact message and an unchecked permission box. I can decline and keep travelling. If I allow this one update, only a local receipt appears. No real message is sent. Future updates ask again; withdrawal cannot recall the earlier simulation.
+**0–7s:** A concept from Ayo Ahmed. Not affiliated with Wheely. Every person, time, and signal is synthetic.
 
-Early and late flights use updated landing time for the included hour. Unknown landing means no countdown. A stale chauffeur signal is unconfirmed. After one hour, I must confirm arrangements in the real app; this concept invents no fare or continued availability.
+**7–14s:** Landed, passport control, then baggage reclaim. Progress is rider reported. I can edit back without changing any booking.
 
-Offline, progress stays on this page, but updates are disabled. Recovery queues nothing and restores no permission. I must review again.
+**14–24s:** This optional check-in is private. I choose bags and twenty minutes, save, then edit and cancel. My original note remains.
 
-Finally I reach Arrivals, finish the simulated timeline, and choose or skip local feedback. Nothing is submitted. The product notebook separates public facts, hypotheses and actual tests. This is an interaction prototype, not proof of customer lift or a shipped native feature.
+**24–43s:** Updating Morgan is separate. The exact preview shares my stage, never the private reason or estimate. Consent starts unchecked. I can refuse. Allowing once creates only a local receipt. No real message is sent. Duplicates are blocked. Withdrawal cannot recall that history.
+
+**43–52s:** These early and late flights are fixed fixtures. Wheely's official included hour starts at updated landing, not scheduled arrival.
+
+**52–64s:** Unknown landing: no countdown. Stale driver signal: unconfirmed. After one hour, confirm arrangements. The demo quotes no fare and guarantees no continued availability.
+
+**64–76s:** Offline, my private note stays, but updates are disabled. I can refuse. Recovery queues nothing and restores no permission. I must review again.
+
+**76–84s:** At Arrivals, the preview no longer claims a delay. Finishing ends only this simulated timeline. Feedback stays local.
+
+**84–89s:** Product notes separate facts from hypotheses. Reloading resets this page.
+
+## Boundaries
+
+Flight tracking, chauffeur maps, private chat and guest updates are existing publicly described Wheely capabilities, not claimed gaps. This optional passenger-reported post-landing interaction sits alongside them. Public facts, unvalidated hypotheses, proposed/synthetic metrics and actual engineering checks are separate. Reload resets private progress/receipts; static-host requests still process ordinary network metadata.
