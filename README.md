@@ -6,6 +6,12 @@ A mobile-first web concept for the minutes between landing and meeting a chauffe
 
 Flight tracking, chauffeur maps, private chat and guest journey updates already exist in Wheely's public descriptions. This prototype does not claim to fix their absence or establish whether a similar pattern already exists inside the app. No native mobile tenure, company employment, internal access or measured product lift is claimed.
 
+## Live concept
+
+[Open the live demo](https://cashpointsoulja.github.io/wheely-arrival-companion/) · [Watch the 89-second voiced walkthrough](https://cashpointsoulja.github.io/wheely-arrival-companion/media/arrival-walkthrough.mp4).
+
+11 October 2026: independent public verification reported HTTP 200, the matching 89-second video/hash, and **89 browser assertions passed**. Direct HTTP/media checks also confirmed publication. These are engineering checks, not customer research or measured product impact; the independent browser result is recorded as reported evidence, not attributed to Ayo. See [actual checks and provenance](docs/actual-tests.md).
+
 ## What works
 
 - Four passenger-reported stages: landed, passport control, baggage reclaim, meet your chauffeur. Sequential forward progress and backward edits.
@@ -44,7 +50,7 @@ npm run build
 
 ## Product notebook
 
-[Watch the 89-second voiced live walkthrough](public/media/arrival-walkthrough.mp4) · [Recorded sections and narration](docs/walkthrough.md).
+[Recorded sections and narration](docs/walkthrough.md) · [Repository video file](public/media/arrival-walkthrough.mp4).
 
 [PRD](docs/prd.md) · [JTBD](docs/jtbd.md) · [Five Whys](docs/five-whys.md) · [ELI5](docs/eli5.md) · [My decisions](docs/decisions.md) · [Event schema](docs/events.md) · [Privacy](docs/privacy.md) · [Metrics](docs/metrics.md) · [Viability](docs/viability.md) · [v2](docs/v2.md) · [Actual tests](docs/actual-tests.md) · [Sources](docs/sources.md) · [Visual research](docs/brand.md) · [Deployment](docs/deployment.md).
 
@@ -52,7 +58,7 @@ All numerical examples in product notes are synthetic or proposed research targe
 
 ## Publication
 
-Intended public repository: `CashpointSoulja/wheely-arrival-companion`. Cloudflare Pages free static build: `npm run build`, output `dist`, Node 22. A prebuilt Direct Upload ZIP is the no-token fallback. No deployment is claimed until its actual URL resolves. See [deployment](docs/deployment.md).
+Public repository: [CashpointSoulja/wheely-arrival-companion](https://github.com/CashpointSoulja/wheely-arrival-companion). GitHub Pages is live from `gh-pages` / root; `build/arrival-companion` remains the default source branch. Vite base is `./`. GitHub Pages does not apply Cloudflare's `_headers` file; custom Cloudflare headers must not be claimed for this host. No Cloudflare deployment is verified. See [deployment](docs/deployment.md).
 
 ## Ownership
 

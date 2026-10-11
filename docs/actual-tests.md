@@ -53,11 +53,11 @@ Accessibility: **six axe scans, zero violations**. Five scans marked the same de
 
 No page errors, external runtime requests or POSTs were observed during the application interactions. Normal static asset/document requests still occurred; absence in this traced run is not a guarantee about hosting access logs.
 
-An earlier 61-assertion run identified two copy issues, which were corrected before the final 89-assertion run. Initial harness races/matcher ambiguity were repaired and rerun; they are not reported as product bugs. Engineering assertions and synthetic UI checks are not customer findings. No independent test run by Ayo is claimed.
+An earlier 61-assertion run identified two copy issues, which were corrected before the final 89-assertion run. Initial harness races/matcher ambiguity were repaired and rerun; they are not reported as product bugs. Engineering assertions and synthetic UI checks are not customer findings. This local browser run is separate from the externally reported public checks below.
 
 ## Publication and video
 
-The owner-created GitHub repository is reachable through existing git access. No Cloudflare deployment URL is verified. The voiced vertical live walkthrough is rendered and inspected: **89.000 seconds, 1080×1920 portrait, 30 fps, H.264/AAC**. See the final media verification below and the recorded sections in [walkthrough](walkthrough.md). Repository publication and Cloudflare deployment are separate checks; no deployed-site claim is made.
+GitHub Pages is live: [demo](https://cashpointsoulja.github.io/wheely-arrival-companion/) and [voiced walkthrough](https://cashpointsoulja.github.io/wheely-arrival-companion/media/arrival-walkthrough.mp4). No Cloudflare deployment URL is verified. The walkthrough is rendered and inspected: **89.000 seconds, 1080×1920 portrait, 30 fps, H.264/AAC**. See the final media verification, today's public checks below, and the recorded sections in [walkthrough](walkthrough.md).
 
 ## Reproducing the browser checks (optional development tooling)
 
@@ -80,4 +80,26 @@ A final full check rerun at 07:10 UTC also passed: typecheck, lint, 67 unit case
 
 Executed a fresh relative-base build and local static HTTP check at `/wheely-arrival-companion/` with no SPA fallback: **23 path/content checks passed**, covering index, both compiled assets, wordmark, all **15** Markdown documents, relative document/media references, the byte-identical 89-second MP4 and empty `.nojekyll`. All local responses were 200; the artifact root has no nested `dist` directory. These are static project-path checks, not a new browser interaction run or proof of an enabled GitHub Pages site.
 
-Typecheck, lint, all 67 unit tests, build and dependency audit passed again during fallback preparation. GitHub Pages activation is reserved for the owner UI, using `gh-pages` / root and retaining `build/arrival-companion` as source default. Cloudflare upload failure was reported by the owner, not reproduced locally; no Cloudflare deployment is claimed.
+Typecheck, lint, all 67 unit tests, build and dependency audit passed again during fallback preparation. GitHub Pages was subsequently activated using `gh-pages` / root; `build/arrival-companion` remains the source default. Cloudflare upload failure was externally reported, not reproduced locally; no Cloudflare deployment is claimed.
+
+## Independent public checks — 11 October 2026
+
+Externally reported verification on the public GitHub Pages site:
+
+- Demo returned HTTP **200**.
+- Public walkthrough was verified at **89 seconds**, with a matching video hash.
+- **89 public browser assertions passed**.
+
+These independent public results are reported evidence, distinct from the executed local 89-assertion browser run above. No raw public browser-run log is reproduced here, no additional assertion scope is inferred from the count, and no Ayo-performed verification is claimed. Engineering checks do not establish customer outcomes or universal browser/accessibility coverage.
+
+### Separately executed publication checks — 07:51 UTC
+
+Direct public HTTP requests returned **200** for the demo, both deployed deployment/actual-test notes, and the MP4. Each response matched the reviewed `gh-pages` artifact byte-for-byte. The downloaded public video was inspected at **89.000 seconds, 1080×1920, 30 fps, H.264/AAC**. Its SHA-256 was:
+
+```text
+e885a2d3c0f61794ca37a69dc10724161b45d457ba2d963218dfaffd9ce3602e
+```
+
+This was an HTTP/media check, not a new browser interaction run. No custom Content-Security-Policy response header was observed in these requests. GitHub Pages does not apply Cloudflare's `_headers` file; those custom response headers are not claimed for the live host.
+
+The publication-note update changes documentation only on source and `gh-pages`; application HTML, JavaScript, CSS, wordmark, media and `.nojekyll` remain byte-identical.
