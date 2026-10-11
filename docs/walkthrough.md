@@ -2,7 +2,7 @@
 
 Independent concept by Ayo Ahmed. Not affiliated with Wheely. Synthetic data only.
 
-[Watch the voiced walkthrough](../media/arrival-walkthrough.mp4) from built product notes. Repository file: [public/media/arrival-walkthrough.mp4](../public/media/arrival-walkthrough.mp4).
+[Watch the voiced walkthrough](../media/arrival-walkthrough.mp4) from built product notes. Repository file: [public/media/arrival-walkthrough.mp4](https://github.com/CashpointSoulja/wheely-arrival-companion/blob/build/arrival-companion/public/media/arrival-walkthrough.mp4).
 
 Verified: **89.000 seconds · 1080×1920 portrait · 30 fps · H.264/AAC**. One continuous capture of the actual local production interface, fixed camera scale and deliberate scrolling/controls, not slides. Voice/video inspected after pronunciation and safety-phrase refinement. No real message, booking, API signal or fare exists.
 

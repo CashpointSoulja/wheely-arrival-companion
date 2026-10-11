@@ -75,3 +75,9 @@ It confirms reset dialogs and changes only synthetic state. Never point it at a 
 Final media inspected: 89.000 seconds, 1080×1920, 30 fps, H.264/AAC; complete voiced ending, actual live controls, all named fixtures, no slides or arbitrary zoom. Narration clearly credits Ayo Ahmed, unchecked consent, no real message, no fare or availability guarantee. Public metadata credits Ayo only; attribution/path audit passed. Decoded visuals are unchanged after an audio-only clarity refinement.
 
 A final full check rerun at 07:10 UTC also passed: typecheck, lint, 67 unit cases (185ms), production build (106ms), and dependency audit (zero vulnerabilities). Browser checks remain from the 89-assertion production run; later changes were documentation and the static MP4 only. The application JS/CSS hashes are unchanged.
+
+## GitHub Pages project-path verification
+
+Executed a fresh relative-base build and local static HTTP check at `/wheely-arrival-companion/` with no SPA fallback: **23 path/content checks passed**, covering index, both compiled assets, wordmark, all **15** Markdown documents, relative document/media references, the byte-identical 89-second MP4 and empty `.nojekyll`. All local responses were 200; the artifact root has no nested `dist` directory. These are static project-path checks, not a new browser interaction run or proof of an enabled GitHub Pages site.
+
+Typecheck, lint, all 67 unit tests, build and dependency audit passed again during fallback preparation. GitHub Pages activation is reserved for the owner UI, using `gh-pages` / root and retaining `build/arrival-companion` as source default. Cloudflare upload failure was reported by the owner, not reproduced locally; no Cloudflare deployment is claimed.

@@ -46,8 +46,6 @@ npm run build
 
 [Watch the 89-second voiced live walkthrough](public/media/arrival-walkthrough.mp4) · [Recorded sections and narration](docs/walkthrough.md).
 
-[Watch the 89-second voiced live walkthrough](public/media/arrival-walkthrough.mp4) · [Recorded sections and narration](docs/walkthrough.md).
-
 [PRD](docs/prd.md) · [JTBD](docs/jtbd.md) · [Five Whys](docs/five-whys.md) · [ELI5](docs/eli5.md) · [My decisions](docs/decisions.md) · [Event schema](docs/events.md) · [Privacy](docs/privacy.md) · [Metrics](docs/metrics.md) · [Viability](docs/viability.md) · [v2](docs/v2.md) · [Actual tests](docs/actual-tests.md) · [Sources](docs/sources.md) · [Visual research](docs/brand.md) · [Deployment](docs/deployment.md).
 
 All numerical examples in product notes are synthetic or proposed research targets. None is a customer result, quote, validated lift or experiment winner.

@@ -18,7 +18,15 @@ In the existing dashboard: Workers & Pages → Create application → Pages → 
 
 Direct Upload projects and Git integration have different update workflows; choose deliberately rather than implying an upload will automatically redeploy from Git. For Workers static assets, `wrangler.jsonc` is supplied as an alternate configuration, but no CLI deployment is necessary for Direct Upload.
 
-## Repository fallback
+## GitHub Pages fallback (owner activation)
+
+The Vite base is `./`, so scripts, styles, the wordmark, product notes and media resolve below the project path `/wheely-arrival-companion/`. The separate `gh-pages` branch contains the compiled `dist` contents at its root plus an empty `.nojekyll`; it does not contain a nested `dist` directory. Keep `build/arrival-companion` as the default source branch.
+
+Owner UI: repository Settings → Pages → Build and deployment → Deploy from a branch → select `gh-pages` and `/ (root)` → Save. No API credentials, purchases or custom domain are needed. Wait for the owner's Pages publication before verifying the expected URL `https://cashpointsoulja.github.io/wheely-arrival-companion/`, its assets, `/wheely-arrival-companion/docs/prd.md` and `/wheely-arrival-companion/media/arrival-walkthrough.mp4`. A pushed branch is not proof of an activated site.
+
+GitHub Pages does not apply Cloudflare's `_headers` file. Do not claim those custom response headers are enforced on this host. The application still has no analytics, storage, API calls or real messages; normal host access metadata remains subject to GitHub's handling. Product notes are nonempty Markdown files, not generated HTML pages.
+
+## Repository upload fallback
 
 If connected access cannot create a new user-owned repository, create an empty public repository called `wheely-arrival-companion` under CashpointSoulja with no auto-generated README/licence/gitignore. Description: “Independent arrival experience concept by Ayo Ahmed. Synthetic data only; not affiliated with Wheely.” Source ZIP can also be uploaded via the GitHub website. Local source is developed on `build/arrival-companion`; no existing main branch is overwritten.
 
