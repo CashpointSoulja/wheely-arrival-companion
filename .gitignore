@@ -1,0 +1,11 @@
+node_modules/
+dist/
+browser-evidence/
+__pycache__/
+*.pyc
+browser-evidence/
+__pycache__/
+*.pyc
+*.log
+.wrangler/
+test-results/
